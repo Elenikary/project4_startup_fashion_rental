@@ -1,0 +1,1097 @@
+/*general styles*/
+
+/*Mobile View*/
+/* logo & buttons */
+
+@media only screen and (max-width: 768px) and (min-width: 320px){
+body {
+    margin: 0%;
+     }
+      
+p {
+    font-family: 'Poppins', sans-serif;
+      
+    }
+    
+/*hamburger menu styles*/
+/* Navbar Styles */
+
+.mobile_nav {
+    overflow: hidden;
+    background-color:#FFDBEC;
+    position: relative;
+  }
+
+.mobile_nav #links {
+    display: none;
+  }
+
+.mobile_nav a {
+    color: black;
+    font-family: 'DM Mono', monospace;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+.mobile_nav a.icon {
+    background: #FFDBEC;
+    display: block;
+    position: absolute;
+    height:fit-content;
+    right: 0;
+    top: 0;
+}
+
+#logo {
+    padding-top:0px;
+    height: 60%;
+    width: 35%;
+    margin-top:0%;
+    margin-left:30%;
+    display: inline;
+    z-index: 1;   
+}
+
+/*space under navbar*/
+.space {
+    display:inline;
+    background-color: white;
+    width: 100vw;
+    height: 60px;
+    position: absolute;
+    margin-top:5%;  
+}
+
+  #sign_in{
+    color: black;
+    margin-right: 10px;
+    padding-top: 20px;
+    display:inline;
+    font-size: 17px;
+    z-index: 1;
+}
+  
+  
+  /*button CSS*/
+  .button1 {
+    margin-top: 15px;
+    margin-left: 60%;
+    height: 30px;
+    background-color: #FFD2B6;
+    border: 3px solid black;
+    box-sizing: border-box;
+    color: #00132C;
+    font-family: 'DM Mono', monospace; 
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 5px;
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: inline;
+  }
+.button1:before {
+    background-color: #FFD2B6;
+    content: "";
+    height: calc(100% + 3px);
+    position: absolute;
+    right: -7px;
+    top: -9px;
+    transition: background-color 300ms ease-in;
+    width: 100%;
+    z-index: -1;
+  }
+  
+.button2 {
+    margin-top: 15px;
+    margin-left: 20%;
+    height: 30px;
+    background-color: #FFD2B6;
+    border: 3px solid black;
+    box-sizing: border-box;
+    color: #00132C;
+    font-family: 'DM Mono', monospace; 
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 5px;
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: inline;
+  }
+
+.button2:before {
+    background-color: #FFDBEC;
+    content: "";
+    height: calc(100% + 3px);
+    position: absolute;
+    right: -7px;
+    top: -9px;
+    transition: background-color 300ms ease-in;
+    width: 100%;
+    z-index: -1;
+  }
+
+/*Jambotron - Carousel Styles*/
+/*slideshow jumbotron*/
+
+* {box-sizing: border-box;}
+
+.mySlides 
+{
+  display: inline-block;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100vw;
+  height: 750px;
+  position:relative;
+  margin: auto;
+  background-color: white;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+#jumbotron{ 
+  /*margin-top: 44%;*/
+  object-fit: fill;
+  width: 100%;
+  height: 520px;
+  padding: 0px;
+  position:relative; 
+}
+
+/* Rectangle Containers on the Slideshow Images*/
+.rectangle{
+    background-color: rgba(255, 210, 182,0.8);
+    width:40%;
+    height:75%;
+    margin-top: -85%;
+    padding:2%;
+    position: relative;
+    margin-left: 10%;
+  }
+
+.rectangle-2{
+    background-color: rgba(197, 133, 73,0.8);
+    width:30%;
+    height:60%;
+    margin-top: -80%;
+    position: relative;
+    margin-left: 15%;
+    padding:1%;
+  }
+
+.rectangle-3{
+    background-color: rgba(255, 210, 182,0.8);
+    width:30%;
+    height:60%;
+    margin-top: -80%;
+    position: relative;
+    margin-left: 15%;
+    padding:1%; 
+  }
+
+.rectangle-4{
+    background-color: rgba(255, 219, 236,0.8);
+    width:30%;
+    height:60%;
+    margin-top: -80%;
+    position: relative;
+    margin-left: 15%;
+    padding:1%;
+
+  }
+
+h1 {
+  font-family: 'DM Mono', monospace; 
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 13px;
+
+}
+
+/*Occasions - Mobile Styles*/
+/*Frame 2: Occasions*/
+.frame2_occasions {  
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /*NEED TO FIGURE OUT WHAT GRIDS IMMA DO*/
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "photo1" "photo2" 
+      "photo3" "photo4";  
+    height: 50vh; /*viewport height*/
+    overflow: hidden;
+    grid-gap: 10px;
+  }
+  
+  .frame2_occasions > div {
+  text-align: center;
+  font-size: 18px; 
+  font-family: 'DM Mono', monospace; /* MIGHT STILL NEED TO CHANGE TBH*/
+  color: black;
+  }
+
+  .occasion_mobile_div{
+    background-color: #FFDBEC;
+    width: 60%;
+    margin-left:20%
+  }
+   
+.photo1{
+    grid-area: photo1;
+    background-image: url("night_out.svg");
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end: 2;
+    overflow: hidden;  
+  }
+  
+.occasions{
+    background-color: #FFD2B6;
+    margin-top: 60%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+.photo2{
+    grid-area: photo2;
+    background-image: url("office.svg");
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:2;
+    grid-column-end: 3;
+    overflow: hidden;
+  }
+  
+.photo3{
+    grid-area: photo3;
+    background-image: url("casual.svg");
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:1;
+    grid-column-end: 2;
+    overflow: hidden;
+  }
+  
+.photo4{
+    background-image: url("weddings.svg");
+    grid-area: photo4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:2;
+    grid-column-end: 3;
+    overflow: hidden;
+  }
+  
+  /*learn more button*/
+.button-occasions {
+    margin-top: 15px;
+    margin-left: 35%;
+    height: 30px;
+    background-color: #FFDBEC;
+    border: 3px solid black;
+    box-sizing: border-box;
+    color: #00132C;
+    font-family: 'DM Mono', monospace; 
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 5px;
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+/*Frame 3: How it works*/
+
+.frame3_how_it_works {  
+    display:grid;
+    grid-template-rows:repeat(3,1fr);
+    grid-template-columns:repeat(1,1fr);
+    gap: 0px 0px;
+    grid-auto-flow:row;
+    grid-template-areas:
+      "subscribe" 
+      "browse" 
+      "receive"
+      ; 
+    height: 100vh; /*viewport height*/
+    grid-gap: 10px;
+  }
+  
+  .frame3_how_it_works > div {
+  text-align: center;
+  font-size: 16px; 
+  font-family: 'DM Mono', monospace; /* MIGHT STILL NEED TO CHANGE TBH*/
+  color: black;
+  }
+  
+  .subscribe{
+    grid-area: subscribe;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end: 2;
+  }
+    
+  #icon{
+    height: 75%;
+    width: 105%;
+    margin-left: -3%;
+    margin-top:0%;
+    margin-bottom: 5%;  
+    display: inline-block;
+  }
+  
+  .browse{
+    grid-area: browse;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:1;
+    grid-column-end: 2;
+  }
+  
+  
+  #dress-icon{
+    height: 60%;
+    width: 70%;
+    margin-left: -2%;
+    margin-top:0%;
+    margin-bottom: 10%;  
+    display: inline-block;
+  }
+  
+  .how-it-works{
+    background-color:#FFD2B6;
+    height: 30px;
+    width:75%;
+    margin-top: 10%;
+    margin-left:12%;
+  }
+  
+  .receive{
+    grid-area: receive;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start:1;
+    grid-column-end: 2;
+  }
+  
+  #icon-3{
+    height: 90%;
+    width: 90%;
+    margin-left: -2%;
+    margin-top:-10%;
+    margin-bottom: 10%;  
+    display: inline-block;  
+  }
+  
+/*Frame 4: Brands*/
+
+.frame4_brands {  
+    display:block; 
+    height: 600px; /*viewport height*/
+    width: auto;
+  }
+  
+  .frame4_brands > div {
+  text-align: center;
+  font-size: 20px; 
+  font-family: 'DM Mono', monospace;
+  color: black;
+  }
+  
+.brands{
+    background-color:#FFDBEC;
+    height: 30px;
+    width:75%;
+    margin-left:12%;
+    margin-top: 10%;
+    padding:0%;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'DM Mono', monospace;
+    text-align: center;
+
+  }
+  
+#asos{
+    height:30%;
+    width:30%;
+    margin-top:-10%;
+    margin-left: 35%;
+  }
+ 
+#polly{
+    height:30%;
+    width:30%;
+    margin-top:-20%;
+    margin-left: 35%;
+  }
+ 
+#zara{
+    height:30%;
+    width:30%;
+    margin-top:-25%;
+    margin-left: 35%;
+  }
+
+#lv{
+    height:30%;
+    width:30%;
+    margin-top:-25%;
+    margin-left: 35%;
+  }
+ 
+#chanel{
+    height:30%;
+    width:30%;
+    margin-top:-20%;
+    margin-left: 35%;
+  }
+
+#yvs{
+    height:30%;
+    width:32%;
+    margin-top:-10%;
+    margin-left: 35%;
+  }
+ 
+#bsb{
+    height:30%;
+    width:30%;
+    margin-top:-10%;
+    margin-left: 35%;
+  }
+ 
+#ck{
+    height:30%;
+    width:30%;
+    margin-top:-10%;
+    margin-left: 35%;
+  }
+ 
+#prada{
+    height:30%;
+    width:30%;
+    margin-top:-10%;
+    margin-left: 35%;
+  }
+  
+
+/*footer styles*/
+.footer-grid {  
+    background-color: #FFD2B6;
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows:repeat(1,1fr);
+    gap: 0px 0px;
+    grid-auto-flow:row;
+    grid-template-areas:
+     "middle"; 
+    height: 150px; 
+    grid-gap: 10px;
+    width:100vw !important;
+    margin-top: 115%;
+    position: relative;
+  }
+  
+  .footer-grid > div {
+  text-align: center;
+  font-size: 15px; 
+  font-family: 'DM Mono', monospace;
+  color: black;
+  }
+
+  .middle{
+    grid-area: middle; 
+  }
+
+  #footer_img{
+    padding-left:0%; 
+    height:40%;
+    width:40%;
+  }
+  
+
+
+/*Mobile: sign up*/
+
+.form-grid {
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows:repeat(2,1fr);
+    gap: 0px 0px;
+    grid-auto-flow:row;
+    grid-template-areas:
+      "sign_in" 
+      "log_in"; 
+    height: 100vh; /*viewport height*/
+    grid-gap: 10px;
+  }
+  
+.form-grid > div {
+    text-align: center;
+    font-size: 13px; 
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.5;
+    color: black;
+    }
+  
+.sign_up_form{
+    grid-area: sign_in;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end: 2;
+    line-height: 2;
+  }
+  
+.log_in_form{
+    grid-area: log_in;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:1;
+    grid-column-end: 2;
+
+  }
+  
+.form-control{
+    height:30px;
+    width:250px;
+    text-align: center;
+  }
+
+.form-group{
+    line-height: 2;
+  }
+
+.log_in_form{
+    margin-top: 10%;
+  }
+  
+
+/*HOW IT WORKS - MOBILE*/
+
+/*Frame 1: Slide*/
+.slideshow-container-2 {
+    width: 100vw;
+    height: 220px;
+    position:relative;
+    margin-top: 10%;
+    background-color: white;  
+}
+
+#how_it_works_slide{
+    margin-top: 0%;
+    object-fit: fill;
+    width: 100%;
+    height: fit-content;
+    padding: 0px;
+    position:relative;  
+  }
+
+.rectangle-mobile{
+    background-color: rgba(255, 210, 182,0.8);
+    width:40%;
+    height:40%;
+    margin-top: -42%;
+    padding:2%;
+    position: relative;
+    margin-left: 10%;
+  }
+
+/*Frame 2: Steps*/
+/*Grids for the HOW IT WORKS PAGE*/
+.how_it_works_steps {  
+    background-color: #FFDBEC;
+    display:grid;
+    grid-template-rows:repeat(10,1fr);
+    grid-template-columns:repeat(1,1fr);
+    gap: 0px 0px;
+    grid-auto-flow:row;
+    grid-template-areas:
+      "icon1" 
+      "step1" 
+      "icon2" 
+      "step2"
+      "icon3" 
+      "step3" 
+      "icon4" 
+      "step4"
+      "icon5" 
+      "step5"; 
+    height: 200vh; /*viewport height*/
+    grid-gap: 10px;
+    width:80vw;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  
+.how_it_works_steps > div {
+  text-align: center;
+  font-size: 10px; 
+  font-family: 'DM Mono', monospace;
+  color: black;
+  }
+  
+.step-h1{
+    background-color:#FFD2B6;
+    height: 30px;
+    width:60%;
+    margin-left:20%; 
+    text-align:center;
+  }
+  
+.step1{
+    grid-area: step1;  
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:1;
+    grid-column-end: 2;
+  }
+  
+.icon1{
+    grid-area: icon1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end: 2;
+  }
+  
+  
+.icon4{
+    grid-area: icon4;  
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start:1;
+    grid-column-end: 2;
+  }
+  
+  
+.step4{
+    grid-area: step4;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    grid-column-start:1;
+    grid-column-end: 2;
+    
+  }
+  
+  
+.icon2{
+    grid-area: icon2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start:1;
+    grid-column-end: 2;
+    
+  }
+  
+.step2{
+    grid-area: step2;  
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start:1;
+    grid-column-end: 2;
+  }
+  
+.icon5{
+    grid-area: icon5;  
+    grid-row-start: 9;
+    grid-row-end: 10;
+    grid-column-start:1;
+    grid-column-end: 2;
+    
+  }
+  
+.step5{
+    grid-area: step5;
+    grid-row-start: 10;
+    grid-row-end: 11;
+    grid-column-start:1;
+    grid-column-end: 2;
+    
+  }
+  
+.icon3{
+    grid-area: icon3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start:1;
+    grid-column-end: 2;
+    
+  }
+  
+  
+.step3{
+    grid-area: step3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start:1;
+    grid-column-end: 2;
+    
+  }
+  
+#icon_steps{
+    height: 60%;
+    width: 100%;
+    margin-top: 3%;
+    margin-left:0%;  
+  }
+  
+.steps_text{
+    margin-top:0%;
+    font-size:15px;
+    text-align: center;
+ 
+}
+  
+/*Frame 3: How it works - Plans*/
+
+.how_it_works_plans {  
+    display:grid;
+    grid-template-rows:repeat(3,1fr);
+    grid-template-columns:repeat(1,1fr);
+    gap: 0px 0px;
+    grid-auto-flow:row;
+    grid-template-areas:
+      "basic" 
+      "silver" 
+      "gold"; 
+    height: 100vh; /*viewport height*/
+    grid-gap: 10px;
+  }
+  
+.how_it_works_plans > div {
+  text-align: center;
+  font-size: 20px; 
+  font-family: 'DM Mono', monospace;
+  color: black;
+  }
+  
+.basic{
+    background-color: #FFDBEC;
+    grid-area: basic;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end: 2;  
+    margin:10% 20%;
+   
+  }
+  
+.silver{
+    background-color: #FFDBEC;
+    grid-area:silver;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:1;
+    grid-column-end: 2;
+    margin:10% 20%;
+    }
+  
+.how-it-works{
+    background-color:#FFD2B6;
+    height: 30px;
+    width:50%; 
+    margin-left:25%;
+    margin-bottom:10%;
+    text-align:center;
+  }
+  
+.gold{
+    background-color: #FFDBEC;
+    grid-area: gold;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start:1;
+    grid-column-end: 2;
+    margin:10% 20%;
+    }
+
+/*NIGHT OUT STYLES - MOBILE*/
+/*Grids for Night Out page*/
+.night-out-grid{
+    display:grid;
+    grid-template-columns:repeat(1,400px);
+    grid-template-rows:repeat(16, 420px);
+    grid-auto-flow:row;
+    grid-template-areas:
+      "pic1" 
+      "pic2" 
+      "pic3" 
+      "pic4" 
+      "pic5" 
+      "pic6" 
+      "pic7" 
+      "pic8" 
+      "pic9" 
+      "pic10" 
+      "pic11" 
+      "pic12" 
+      "pic13" 
+      "pic14" 
+      "pic15" 
+      "pic16"; 
+    height: 800vh; /*viewport height*/
+    grid-gap: 20px;
+  }
+  
+#night-out-pics{
+    display: none;
+  }
+  
+.night{
+    background-color:#FFDBEC;
+    height: 30px;
+    width:50%;
+    margin-left:23%;
+    margin-top: 15%;
+    padding:0%;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'DM Mono', monospace;
+    text-align: center;
+  }
+  
+.night-out-pic1{
+    background-image: url("pic1.svg");
+    grid-area: pic2;
+    background-color: white;
+    margin:10% 17%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end: 2;
+    text-align: center;
+  
+  }
+  
+.night-out-pic2{
+    background-image: url("pic2.svg");
+    grid-area: pic2;
+    background-color: white;
+    margin:10% 17%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:1;
+    grid-column-end: 2;
+    text-align: center; 
+  }
+
+.night-out-pic3{
+    background-image: url("pic3.svg");
+    grid-area: pic3;
+    margin:10% 17%;
+  
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start:1;
+    grid-column-end: 2;  
+  }
+  
+.night-out-pic4{
+    background-image: url("pic4.svg");
+    grid-area: pic4;
+    background-color: white;
+    margin:10% 17%;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start:1;
+    grid-column-end: 2;  
+  }
+
+.night-out-pic5{
+    background-image: url("pic5.svg");
+    grid-area: pic5;
+    background-color: white;
+    margin:10% 17%;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start:1;
+    grid-column-end: 2;
+  
+  }
+  
+.night-out-pic6{
+    background-image: url("pic6.svg");
+    grid-area: pic6;
+    background-color: white;
+    margin:10% 17%;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start:1;
+    grid-column-end: 2;  
+  }
+  
+.night-out-pic7{
+    background-image: url("pic7.svg");
+    grid-area: pic7;
+    background-color: white;
+    margin:10% 17%;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start:1;
+    grid-column-end: 2;  
+  }
+
+.night-out-pic8{
+    background-image: url("pic8.svg");
+    grid-area: pic8;
+    background-color: white;
+    margin:10% 17%;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    grid-column-start:1;
+    grid-column-end: 2;  
+  }
+
+.night-out-pic9{
+    background-image: url("pic9.svg");
+    grid-area: pic9;
+    background-color: white;
+    margin:10% 17%;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    grid-column-start:1;
+    grid-column-end: 2;  
+  }
+
+.night-out-pic10{
+    background-image: url("pic10.svg");
+    grid-area: pic10;
+    background-color:white;
+    margin:10% 17%;
+    grid-row-start: 10;
+    grid-row-end: 11;
+    grid-column-start:1;
+    grid-column-end: 2;  
+  }
+
+.night-out-pic11{
+    background-image: url("pic11.svg");
+    grid-area: pic11;
+    background-color: white;
+    margin:10% 17%;
+    grid-row-start: 11;
+    grid-row-end: 12;
+    grid-column-start:1;
+    grid-column-end: 2;  
+  }
+
+.night-out-pic12{
+    background-image: url("pic12.svg");
+    grid-area: pic12;
+    background-color: white;
+    margin:10% 17%;
+    grid-row-start: 12;
+    grid-row-end: 13;
+    grid-column-start:1;
+    grid-column-end: 2;  
+  }
+ 
+.night-out-pic13{
+    background-image: url("pic13.svg");
+    grid-area: pic13;
+    background-color: white;
+    margin:10% 17%;
+    grid-row-start: 13;
+    grid-row-end: 14;
+    grid-column-start:1;
+    grid-column-end: 2;  
+  }
+
+.night-out-pic14{
+    background-image: url("pic14.svg");
+    grid-area: pic14;
+    background-color: white;
+    margin:10% 17%;
+    grid-row-start: 14;
+    grid-row-end: 15;
+    grid-column-start:1;
+    grid-column-end: 2;  
+  }
+  
+.night-out-pic15{
+    background-image: url("pic15.svg");
+    grid-area: pic15;
+    background-color: white;
+    margin:10% 17%;
+    grid-row-start: 15;
+    grid-row-end: 16;
+    grid-column-start:1;
+    grid-column-end: 2;  
+  }
+
+.night-out-pic16{
+    background-image: url("pic16.svg");
+    grid-area: pic16;
+    background-color: white;
+    margin:10% 17%;
+    grid-row-start: 16;
+    grid-row-end: 17;
+    grid-column-start:1;
+    grid-column-end: 2;  
+  }
+
+.button-night{
+    margin-top: 80%;
+    margin-left: 35%;
+    height: 30px;
+    background-color: #FFD2B6;
+    border: 3px solid black;
+    box-sizing: border-box;
+    color: #00132C;
+    font-family: 'DM Mono', monospace; 
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 5px;
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: inline;
+}
+
+}

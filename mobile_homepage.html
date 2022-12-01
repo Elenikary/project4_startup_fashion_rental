@@ -1,0 +1,188 @@
+<!--Notes:
+  
+For mobile-tablet: dimensions for the query:
+    min: 320px
+    max: 768px 
+Genrally for Mobile Devices:
+    min: 320px
+    max: 480px    
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Loué </title>
+    <link rel="stylesheet" href="mobile_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+<!--Top: logo & navabar (tamplate) -->
+
+<!--hamburger menu -->
+    <div class="mobile_nav">
+        <a href="index.html"><img src="Untitled-4.svg" id="logo" alt="logo"></a>
+        <div id="links">
+            <a href="#">News</a>
+            <a href="#">Shop By Occasion</a>
+            <a href="#">Designers</a>
+            <a href="#">About</a>
+            <a href="#">How It Works</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    
+    </div>
+
+
+<div class="space"> 
+    <a href="sign_up.html"><button class="button1" role="button" formaction="sign_up.html">Log In</button></a>
+    <a href="sign_up.html"><button class="button2" role="button" formaction="sign_up.html">Join Us</button></a>
+</div>
+
+<br><br><br><br>
+
+
+<!--Carousel-->
+<div class="slideshow-container">
+    <div class="mySlides">
+      <img src="midi-dress.svg" id="jumbotron" style="margin-top: -44%;">
+      <div class="rectangle">
+            <h1>“Creating The Wardrobe Of Your Dreams Has Never Been Easier"</h1> 
+        </div>
+    </div>
+    
+    <div class="mySlides">
+      <img src="office_carousel.svg" id="jumbotron" style="margin-top: -35%;">
+      <div class="rectangle-2">
+            <h1>“Choose from a Variety of styles"</h1> 
+      </div>         
+    </div>
+    
+    <div class="mySlides">
+      <img src="night-out-carousel.svg" id="jumbotron" style="margin-top: -29%;">
+      <div class="rectangle-3">
+            <h1>Just In</h1> 
+            <h3>ASOS Dresses</h3>
+        </div>
+    </div>
+
+    <div class="mySlides">
+        <img src="maternity-carousel.svg" id="jumbotron" style="margin-top: -28%;">
+        <div class="rectangle-4">
+            <h1>New!</h1> 
+            <h3>Maternity Clothing All Sizes!</h3>
+        </div>
+      </div>
+    
+</div>
+
+<!--JS for Hamburger Menu-->
+<script>
+    function myFunction() {
+      var x = document.getElementById("links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+</script>
+
+<!--Occasions Mobile-->
+<div class="occasion_mobile_div"><h1>What's The Occasion?</div>
+
+<div class="frame2_occasions">
+    
+    <!-- Row 1 -->
+    <div class="photo1"><div class="occasions"><a href="night_out.html" style="text-decoration: none; color:black">Night Out</a></div></div>
+    <div class="photo2"><div class="occasions">Office Look</div></div>
+
+    
+    <!-- Row 2 -->
+   
+    <div class="photo3"><div class="occasions">Casual Look</div></div>
+    <div class="photo4"><div class="occasions">Weddings & Events</div></div>
+</div>
+<br>
+<button class="button-occasions" role="button">Learn More</button>
+
+<br><br><br>
+
+<!--Frame: How It Works - Mobile-->
+<!--FRAME 3: HOW IT WORKS-->
+
+<div class="how-it-works"><h1>How It Works</h1></div>
+<div class="frame3_how_it_works">
+
+    <div class="subscribe">
+        <img src="subscribe-icon.png" id="icon">
+        <h1 style="font-style:normal; margin-top:-15%; font-size: 25px;">Subscribe</h1>
+        <p style="font-size: 16px; padding:10px; margin:4px;">Create an account and pick the subscription 
+            plan the fits your needs</p>
+    </div>
+
+    <div class="browse">
+        <img src="dress-icon-final.png" id="dress-icon">
+        <h1 style="font-style:normal; margin-top: -13%; font-size: 25px;">Browse & Select</h1>
+        <p style="margin:4px; font-size: 16px; padding:10px;">Browse through our variety of styles 
+            and add your favotite styles to your wardrobe</p>
+    </div>
+
+    <div class="receive">
+        <img src="receive.png" id="icon-3">
+        <h1 style="font-style:normal; margin-top: -16%; font-size: 25px;">Receive</h1>
+        <p style="margin:4px; font-size: 16px; padding:10px">Get your order within 2 days. Guaranteed!</p>
+    </div>
+
+</div>
+<br><br><br><br><br><br>
+<a href="how_it_works.html"><button class="button-occasions" role="button">Learn More</button></a>
+
+<br><br><br>
+
+<!--Brands - Mobile-->
+<div class="brands">Brands / Designers</div>
+<div class="frame4_brands">
+        <a href="https://www.asos.com/us/women/"><img src="asos.svg" id="asos"></a>
+        <a href="https://us.princesspolly.com"><img src="polly.svg" id="polly"></a>
+        <a href="https://www.zara.com/us/"><img src="zara.svg" id="zara"></a>
+        <a href="https://us.louisvuitton.com/eng-us/homepage"><img src="lv.svg" id="lv"></a>
+        <a href="https://us.louisvuitton.com/eng-us/homepage"><img src="chanel.svg" id="chanel"></a><br><br>
+        <a href="https://www.ysl.com/en-us"><img src="yvs.svg" id="yvs"></a>
+        <a href="https://www.bsbfashion.com/us/en"><img src="bsb.svg" id="bsb"></a><br><br>
+        <a href="https://www.calvinklein.us/en"><img src="ck.svg" id="ck"></a><br><br><br>
+        <a href="https://www.prada.com/us/en.html"><img src="prada.svg" id="prada"></a>
+</div>
+
+
+<!--FOOTER: TEMPLATE-->
+    <div class="footer-grid">
+        <div class="middle">
+            <p style="text-decoration: underline; font-family: 'DM Mono'; text-align: center;">Stay Connected</p>
+            <!--img src="social-logos.png" style="padding-left:4%; height:fit-content; width:fit-content;"-->
+            <img src="social.svg" id="footer_img">
+            <p style="font-size:11px; margin:2px;">Copyright © 2022</p>
+        </div>
+   
+
+    </div>
+
+</body>
+
+</html>
+

@@ -1,0 +1,426 @@
+<!-- CHECK AT THE END: THE DROPDOWN MENU & THE LINKS DON'T RESPOND ?-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Loué </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">  
+</head>
+
+<body>
+
+<!-- Frame 1 - top: logo & navabar (tamplate) -->
+<div class="frame1_top_template">
+    <div class="space">
+        <a href="index.html"><img src="Untitled-4.svg" alt="logo"></a>
+        <!--img src="logo-illustrator.jpg" alt="logo"-->
+        <a href="sign_up.html" id="sign_in">Log in</a>
+        <a href="sign_up.html"><button class="button" role="button" formaction="sign_up.html">Join Us</button></a>
+</div>
+
+<div class="navbar">
+        <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NEW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <div class="dropdown">
+            <button class="dropbtn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shop by Occasion&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-caret-down" style="display: none;"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Casual</a>
+                <a href="#">Office Look</a>
+                <a href="#">Weddings & Events</a>
+                <a href="night_out.html">Night Out</a>
+            </div>
+        </div> 
+        <a href="#">&nbsp;&nbsp;&nbsp;Designers&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <a href="how_it_works.html">&nbsp;&nbsp;&nbsp;&nbsp;How it works&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+</div>
+</div>
+
+<!--HTML FOR MOBILE NAVBAR: -->
+<div class="mobile_nav">
+    <a href="index.html"><img src="Untitled-4.svg" id="logo" alt="logo"></a>
+    <div id="links">
+        <a href="#">News</a>
+        <a href="#">Shop By Occasion</a>
+        <a href="#">Designers</a>
+        <a href="#">About</a>
+        <a href="#">How It Works</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div class="space_mobile"> 
+<a href="sign_up.html"><button class="button1" role="button" formaction="sign_up.html">Log In</button></a>
+<a href="sign_up.html"><button class="button2" role="button" formaction="sign_up.html">Join Us</button></a>
+</div>
+
+
+<!-- slideshow jumbotron -->
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="midi-dress.svg" id="jumbotron">
+      <div class="rectangle">
+            <br>
+            <h1>“Creating The Wardrobe Of Your Dreams Has Never Been Easier"</h1> 
+            <br>
+            <h3>Explore Our Styles Now !</h3>
+            <button class="button" role="button" style="margin: 20%; margin-left:32%; position: absolute; top: 40%;">Learn More</button>
+    </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="office_carousel.svg" id="jumbotron">
+      <div class="rectangle-2">
+            <br><br>
+            <h1 style="color: white; font-size: 22px;">“Choose from a variety of different styles or let one of our experiecned stylists help you out"</h1> 
+      </div>         
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="night-out-carousel.svg" id="jumbotron">
+      <div class="rectangle-3">
+            <h1>Just In</h1> 
+            <h3>ASOS Dresses</h3>
+            <button class="button" role="button" style="margin: 20%; margin-left:25%; position: absolute; top: 40%;">Explore</button>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="maternity-carousel.svg" id="jumbotron">
+        <div class="rectangle-4">
+            <br>
+            <h1>New!</h1> 
+            <br><br>
+            <h3>Now Choose from our Variety of Maternity Clothing!</h3><br><br>
+            <a href="" id="wardrobe">Add to wardrobe</a>
+
+        </div>
+      </div>
+    
+</div>
+<div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+</div>
+
+<script>
+      let slideIndex = 0;
+      /*while(true){*/
+          showSlides();
+      /*}*/
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 4 seconds
+      }
+
+      function myFunction() {
+      var x = document.getElementById("links");
+      if (x.style.display === "block") {
+          x.style.display = "none";
+      } else {
+          x.style.display = "block";
+      }
+  }
+</script>
+
+<!-- carousel jumbotron MOBILE-->
+<div class="slideshow-container-mobile">
+    <div class="Slides">
+      <img src="midi-dress.svg" id="jumbotron" style="margin-top: -44%;">
+      <div class="rectangle">
+            <h1>“Creating The Wardrobe Of Your Dreams Has Never Been Easier"</h1> 
+        </div>
+    </div>
+    <div class="Slides">
+      <img src="office_carousel.svg" id="jumbotron" style="margin-top: -35%;">
+      <div class="rectangle-2">
+            <h1>“Choose from a Variety of styles"</h1> 
+      </div>         
+    </div>
+    
+    <div class="Slides">
+      <img src="night-out-carousel.svg" id="jumbotron" style="margin-top: -29%;">
+      <div class="rectangle-3">
+            <h1>Just In</h1> 
+            <h3>ASOS Dresses</h3>
+        </div>
+    </div>
+
+    <div class="Slides">
+        <img src="maternity-carousel.svg" id="jumbotron" style="margin-top: -28%;">
+        <div class="rectangle-4">
+            <h1>New!</h1> 
+            <h3>Now Choose from our Variety of Maternity Clothing!</h3>
+        </div>
+      </div>    
+</div>
+
+
+<br>
+
+<br><br><br>
+
+<!--Frame 2 - Occasions -->
+<div class="frame2_occasions">
+    
+<!-- Row 1 -->
+<div class="blank"></div>
+<div class="blank"></div>
+<div class="blank"></div>
+<div class="photo1"><div class="occasions"><a href="night_out.html" style="text-decoration: none; color:black">Night Out</a></div></div>
+<div class="photo1.1"></div>
+<div class="blank"></div>
+<div class="photo2"><div class="occasions">Office Look</div></div>
+<div class="photo2.1"></div>
+<div class="blank"></div>
+
+<!-- Row 2 -->
+<div class="circle"><h1 class="frame2-circle">What's The Occasion?</h1></div>
+<div class="circle1"></div>
+<div class="circle1"></div>
+<div class="photo1.2"></div>
+<div class="photo1.2"></div>
+<div class="blank"></div>
+<div class="photo2.2"></div>
+<div class="photo2.2"></div>
+<div class="blank"></div>
+
+<!-- Row 3 -->
+<div class="circle2"></div>
+<div class="circle2"></div>
+<div class="circle2"></div>
+<div class="photo1.3"></div>
+<div class="photo1.3"></div>
+<div class="blank"></div>
+<div class="photo2.3"></div>
+<div class="photo2.3"></div>
+<div class="blank"></div>
+
+<!-- Row 4 -->
+<div class="circle3"></div>
+<div class="circle3"></div>
+<div class="circle3"></div>
+<div class="photo3"><div class="occasions">Casual Look</div></div>
+<div class="photo3.1"></div>
+<div class="blank"></div>
+<div class="photo4"><div class="occasions">Weddings & Events</div></div>
+<div class="photo4.1"></div>
+<div class="blank"></div>
+
+<!-- Row 5 -->
+<div class="blank"></div>
+<div class="learn-more">
+    <button class="button-occasions" role="button">Learn More</button>
+</div>
+<div class="blank"></div>
+<div class="photo3.2"></div>
+<div class="photo3.2"></div>
+<div class="blank"></div>
+<div class="photo4.2"></div>
+<div class="photo4.2"></div>
+<div class="blank"></div>
+
+<!-- Row 6 -->
+<div class="blank"></div>
+<div class="blank"></div>
+<div class="blank"></div>
+<div class="photo3.3"></div>
+<div class="photo3.3"></div>
+<div class="blank"></div>
+<div class="photo4.3"></div>
+<div class="photo4.3"></div>
+<div class="blank"></div>
+
+</div>
+
+<!--Occasions - Mobile-->
+
+<div class="occasion_mobile_div"><h1>What's The Occasion?</div>
+<div class="frame2_occasions_mobile">
+         <!-- Row 1 -->
+        <div class="photo1_mobile"><div class="occasions-mobile"><a href="night_out.html" style="text-decoration: none; color:black">Night Out</a></div></div>
+        <div class="photo2_mobile"><div class="occasions-mobile">Office Look</div></div>
+    
+        <!-- Row 2 -->
+       <div class="photo3_mobile"><div class="occasions-mobile">Casual Look</div></div>
+        <div class="photo4_mobile"><div class="occasions-mobile">Weddings & Events</div></div>
+    </div>
+<br>
+<button class="button-occasions-mobile" role="button">Learn More</button>
+
+
+<!--FRAME 3: HOW IT WORKS-->
+
+<div class="frame3_how_it_works">
+    <div class="subscribe">
+        <img src="subscribe-icon.png" id="icon">
+        <h1 style="font-style:normal; margin-top:-15%; font-size: 25px;">Subscribe</h1>
+        <p style="font-size: 16px; padding:10px; margin:4px;">Create an account and pick the subscription 
+            plan the fits your needs</p>
+    </div>
+    <div class="browse">
+        <div class="how-it-works"><h1>How It Works</h1></div>
+        <img src="dress-icon-final.png" id="dress-icon"><br><br><br>
+        <h1 style="font-style:normal; margin-top: -13%; font-size: 25px;">Browse & Select</h1>
+        <p style="margin:4px; font-size: 16px; padding:10px;">Browse through our variety of styles 
+            and add your favotite styles to your wardrobe</p>
+        <a href="how_it_works.html"><button class="button-occasions" role="button">Learn More</button></a>
+
+
+    </div>
+    <div class="receive">
+        <img src="receive.png" id="icon-3">
+        <h1 style="font-style:normal; margin-top: -16%; font-size: 25px;">Receive</h1>
+        <p style="margin:4px; font-size: 16px; padding:10px">Get your order within 2 days. Guaranteed!</p>
+    </div>
+
+    <div class="subscribe1"></div>
+    <div class="browse1"></div>
+    <div class="receive1"></div>
+
+    <div class="subscribe2"></div>
+    <div class="browse2"></div>
+    <div class="receive2"></div>
+</div>
+
+<br><br><br>
+
+<!--frame 3: how it works - MOBILE -->
+
+<div class="how-it-works-mobile"><h1>How It Works</h1></div>
+<div class="frame3_how_it_works_mobile">
+
+    <div class="subscribe">
+        <img src="subscribe-icon.png" id="icon">
+        <h1 style="font-style:normal; margin-top:-15%; font-size: 25px;">Subscribe</h1>
+        <p style="font-size: 16px; padding:10px; margin:4px;">Create an account and pick the subscription 
+            plan the fits your needs</p>
+    </div>
+
+    <div class="browse">
+        <img src="dress-icon-final.png" id="dress-icon">
+        <h1 style="font-style:normal; margin-top: -13%; font-size: 25px;">Browse & Select</h1>
+        <p style="margin:4px; font-size: 16px; padding:10px;">Browse through our variety of styles 
+            and add your favotite styles to your wardrobe</p>
+    </div>
+
+    <div class="receive">
+        <img src="receive.png" id="icon-3">
+        <h1 style="font-style:normal; margin-top: -16%; font-size: 25px;">Receive</h1>
+        <p style="margin:4px; font-size: 16px; padding:10px">Get your order within 2 days. Guaranteed!</p>
+    </div>
+
+</div>
+<a href="how_it_works.html"><button class="button-occasions-mobile" role="button" style="margin-top: 40%">Learn More</button></a>
+
+
+<!--FRAME 4: Brands-->
+<div class="frame4_brands">
+    <div class="column1">
+        <a href="https://www.asos.com/us/women/"><img src="asos.svg" id="asos"></a>
+        <a href="https://us.princesspolly.com"><img src="polly.svg" id="polly"></a>
+        <a href="https://www.zara.com/us/"><img src="zara.svg" id="zara"></a>
+    </div>
+
+    <div class="column2">
+        <div class="brands">Brands / Designers</div>
+        <a href="https://us.louisvuitton.com/eng-us/homepage"><img src="lv.svg" id="lv"></a>
+        <a href="https://us.louisvuitton.com/eng-us/homepage"><img src="chanel.svg" id="chanel"></a><br><br>
+        <a href="https://www.ysl.com/en-us"><img src="yvs.svg" id="yvs"></a>
+
+    </div>
+
+    <div class="column3">
+        <a href="https://www.bsbfashion.com/us/en"><img src="bsb.svg" id="bsb"></a><br><br>
+        <a href="https://www.calvinklein.us/en"><img src="ck.svg" id="ck"></a><br><br><br>
+        <a href="https://www.prada.com/us/en.html"><img src="prada.svg" id="prada"></a>
+    </div>
+</div>
+
+<!--Brands - Mobile-->
+<div class="brands-mobile">Brands / Designers</div>
+<div class="frame4_brands_mobile">
+        <a href="https://www.asos.com/us/women/"><img src="asos.svg" id="asos"></a>
+        <a href="https://us.princesspolly.com"><img src="polly.svg" id="polly"></a>
+        <a href="https://www.zara.com/us/"><img src="zara.svg" id="zara"></a>
+        <a href="https://us.louisvuitton.com/eng-us/homepage"><img src="lv.svg" id="lv"></a>
+        <a href="https://us.louisvuitton.com/eng-us/homepage"><img src="chanel.svg" id="chanel"></a><br><br>
+        <a href="https://www.ysl.com/en-us"><img src="yvs.svg" id="yvs"></a>
+        <a href="https://www.bsbfashion.com/us/en"><img src="bsb.svg" id="bsb"></a><br><br>
+        <a href="https://www.calvinklein.us/en"><img src="ck.svg" id="ck"></a><br><br><br>
+        <a href="https://www.prada.com/us/en.html"><img src="prada.svg" id="prada"></a>
+</div>
+
+
+<!--FOOTER: TEMPLATE-->
+    <div class="footer-grid">
+        <div class="left">
+            <ul style="list-style-type:none; text-align: left;">
+                <li style="text-decoration: underline;" >About</li><br>
+                <li>About Us</li>
+                <a href="how_it_works.html" style="text-decoration: none; color:black"><li>How It Works</li></a>
+                <li>Find Your Style</li>
+              </ul>
+        </div>
+        <div class="middle">
+            <p style="text-decoration: underline; font-family: 'DM Mono'; text-align: center;">Stay Connected</p>
+            <!--img src="social-logos.png" style="padding-left:4%; height:fit-content; width:fit-content;"-->
+            <img src="social.svg" id="footer_img">
+
+            <p style="font-size:11px; margin:2px;">Copyright © 2022</p>
+        </div>
+        <div class="right">
+            <ul style="list-style-type:none; text-align: left;">
+                <li style="text-decoration: underline;">Assistance</li><br>
+                <li>Help</li>
+                <li>FAQs</li>
+                <li>Manage Your Account</li>
+              </ul>
+        </div>
+
+
+    </div>
+
+    
+<!--MOBILE-->
+
+<!--mobile view: top of the page-->
+
+<!--mobile view: footer-->
+
+  
+
+
+
+</body>
+
+</html>
+

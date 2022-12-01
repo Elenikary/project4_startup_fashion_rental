@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sign Up / Log In </title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+<!-- Frame 1 - top: logo & navabar (tamplate) -->
+<div class="frame1_top_template">
+    <div class="space">
+        <a href="index.html"><img src="Untitled-4.svg" alt="logo"></a>
+        <a href="sign_up.html" id="sign_in">Log in</a>
+        <a href="sign_up.html"><button class="button" role="button" formaction="sign_up.html">Join Us</button></a>
+    </div>
+
+    <div class="navbar">
+      <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NEW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      <div class="dropdown">
+          <button class="dropbtn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shop by Occasion&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-caret-down" style="display: none;"></i>
+          </button>
+          <div class="dropdown-content">
+              <a href="#">Casual</a>
+              <a href="#">Office Look</a>
+              <a href="#">Weddings & Events</a>
+              <a href="night_out.html">Night Out</a>
+          </div>
+      </div> 
+      <a href="#">&nbsp;&nbsp;&nbsp;Designers&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      <a href="how_it_works.html">&nbsp;&nbsp;&nbsp;&nbsp;How it works&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+</div>
+</div>
+
+<!--HTML FOR MOBILE NAVBAR: -->
+<div class="mobile_nav">
+  <a href="index.html"><img src="Untitled-4.svg" id="logo" alt="logo"></a>
+  <div id="links">
+      <a href="#">News</a>
+      <a href="#">Shop By Occasion</a>
+      <a href="#">Designers</a>
+      <a href="#">About</a>
+      <a href="#">How It Works</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="space_mobile"> 
+<a href="sign_up.html"><button class="button1" role="button" formaction="sign_up.html">Log In</button></a>
+<a href="sign_up.html"><button class="button2" role="button" formaction="sign_up.html">Join Us</button></a>
+</div>
+
+
+<!--Frame 1: sign up & log in forms-->
+<div class="form-grid">
+
+<div class="sign_up_form">
+    <h1 style="font-size:25px; font-style: normal;">Sign Up</h1><br>
+
+    <form action="/action_page.php">
+
+        <div class="form-group">
+          <label for="name">Name</label><br>
+          <input type="name" class="form-control" id="name" placeholder="Enter First & Last Name" name="username">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Username</label><br>
+            <input type="name" class="form-control" id="email" placeholder="Enter a Username" name="userbame">
+          </div>
+     
+        <div class="form-group">
+          <label for="pwd">Password</label><br>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+        </div>
+
+        <div class="form-group">
+            <label for="pwd">Confirm Password</label><br>
+            <input type="password" class="form-control" id="pwd" placeholder="Confirm password" name="pwd">
+        </div>
+
+        <p>Please select Your desired subscription plan:</p>
+            <input type="radio" id="basic" name="plan" value="Basic">
+            <label for="basic">Basic</label><br>
+            <input type="radio" id="silver" name="plan" value="Silver">
+            <label for="silver">Silver</label><br>
+            <input type="radio" id="gold" name="plan" value="Gold">
+            <label for="gold">Gold</label>
+        <br>
+        <button type="submit" class="button" id="sign" style="margin:2%; margin-left:-70px">Submit</button>
+      </form>
+
+</div>
+
+<div class="log_in_form">
+    <h1 style="font-size:25px; font-style: normal;">Log In</h1><br>
+
+    <form action="/action_page.php">
+        <div class="form-group">
+          <label for="name">Username</label><br>
+          <input type="name" class="form-control" id="email" placeholder="Enter Username" name="userbame">
+        </div>
+       
+        <div class="form-group">
+          <label for="pwd">Password</label><br>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+        </div>
+        <br>
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+        <br>
+        <button type="submit" class="button" id="sign" style="margin:2%; margin-left:-50px">Submit</button>
+      </form>
+
+</div>
+
+</div>
+
+<!--SIGN UP GRID FOR MOBILE-->
+<div class="form-grid-mobile">
+
+  <div class="sign_up_form">
+      <h1 style="font-size:25px; font-style: normal;">Sign Up</h1><br>
+  
+      <form action="/action_page.php">
+  
+          <div class="form-group">
+            <label for="name">Name</label><br>
+            <input type="name" class="form-control" id="name" placeholder="Enter First & Last Name" name="username">
+          </div>
+  
+          <div class="form-group">
+              <label for="name">Username</label><br>
+              <input type="name" class="form-control" id="email" placeholder="Enter a Username" name="userbame">
+            </div>
+       
+          <div class="form-group">
+            <label for="pwd">Password</label><br>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+          </div>
+  
+          <div class="form-group">
+              <label for="pwd">Confirm Password</label><br>
+              <input type="password" class="form-control" id="pwd" placeholder="Confirm password" name="pwd">
+          </div>
+  
+          <p>Please select Your desired subscription plan:</p>
+              <input type="radio" id="basic" name="plan" value="Basic">
+              <label for="basic">Basic</label><br>
+              <input type="radio" id="silver" name="plan" value="Silver">
+              <label for="silver">Silver</label><br>
+              <input type="radio" id="gold" name="plan" value="Gold">
+              <label for="gold">Gold</label>
+          <br>
+          <button type="submit" class="button1" id="sign" style="margin:2%; margin-left:-10%">Submit</button>
+        </form>
+  
+  </div>
+  
+  <div class="log_in_form">
+      <h1 style="font-size:25px; font-style: normal;">Log In</h1>
+      <form action="/action_page.php">
+          <div class="form-group">
+            <label for="name">Username</label><br>
+            <input type="name" class="form-control" id="email" placeholder="Enter Username" name="username">
+          </div>
+         
+          <div class="form-group">
+            <label for="pwd">Password</label><br>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+          </div>
+          <br>
+          <div class="checkbox">
+            <label><input type="checkbox" name="remember"> Remember me</label>
+          </div>
+          <br>
+          <button type="submit" class="button1" id="sign" style="margin:2%; margin-left:-10%">Submit</button>
+        </form>
+  
+  </div>
+  
+  </div>
+
+<!--FOOTER: TEMPLATE-->
+<div class="footer-grid">
+  <div class="left">
+      <ul style="list-style-type:none; text-align: left;">
+          <li style="text-decoration: underline;" >About</li><br>
+          <li>About Us</li>
+          <a href="how_it_works.html" style="text-decoration: none; color:black"><li>How It Works</li></a>
+          <li>Find Your Style</li>
+        </ul>
+  </div>
+  <div class="middle">
+      <p style="text-decoration: underline; font-family: 'DM Mono'; text-align: center;">Stay Connected</p>
+      <img src="social.svg" id="footer_img">
+      <p style="font-size:11px; margin:2px;">Copyright © 2022</p>
+  </div>
+  <div class="right">
+      <ul style="list-style-type:none; text-align: left;">
+          <li style="text-decoration: underline;">Assistance</li><br>
+          <li>Help</li>
+          <li>FAQs</li>
+          <li>Manage Your Account</li>
+        </ul>
+  </div>
+</div>
+
+</body>
